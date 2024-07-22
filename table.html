@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        tbody tr:nth-of-type(2n+1) {
+            background-color: rebeccapurple;
+        }
+
+        tbody tr:nth-of-type(2n) {
+            background-color: rgb(220, 185, 255);
+        }
+
+        thead tr th:nth-child(2n)  {
+            background-color: rgb(220, 185, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 表頭 -->
+        <thead>
+            <!-- 表頭列 -->
+            <tr>
+                <th>月份</th>
+                <th>收入</th>
+                <th>支出</th>
+                <th>餘額</th>
+                <th>備註</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1月</td>
+                <td>3000</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>電話費</td>
+            </tr>
+            <tr>
+                <td>2月</td>
+                <td>3000</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>電費</td>
+            </tr>
+            <tr>
+                <td>3月</td>
+                <td>3000</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>水費</td>
+            </tr>
+            <tr>
+                <td>3月</td>
+                <td>3000</td>
+                <td>2000</td>
+                <td>1000</td>
+                <td>水費</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>合計</td>
+                <td>9000</td>
+                <td>6000</td>
+                <td colspan="2">3000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
